@@ -95,15 +95,27 @@ namespace Vita_InfoTest
         }
 
 
-        
 
 
-        public bool CompareTo(VitaT_Disoccupato d)
+
+        public int CompareTo(VitaT_Disoccupato other)
         {
-            if (this.punteggio() == d.punteggio())
-                return true;
+            if (other == null)
+
+                return 1;
+
+            if (this.punteggio() == other.punteggio())
+
+                return 0;
+
+            else if (this.punteggio() < other.punteggio())
+
+                return -1;
+
             else
-                return false;
+
+                return 1;
+
         }
 
 

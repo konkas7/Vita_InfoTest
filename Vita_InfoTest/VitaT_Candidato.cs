@@ -71,7 +71,18 @@ namespace Vita_InfoTest
                 return false;
         }
 
-        public abstract bool CompareTo(VitaT_Candidato c);
+        public int CompareTo(VitaT_Candidato other)
+        {
+            if (other == null)
+                return 1;
+
+            if (this.punteggio() == other.punteggio())
+                return 0;
+            else if (this.punteggio() < other.punteggio())
+                return -1;
+            else
+                return 1;
+        }
 
         public override int GetHashCode()
         {
