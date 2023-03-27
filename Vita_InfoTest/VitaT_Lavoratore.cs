@@ -51,5 +51,37 @@ namespace Vita_InfoTest
                 return false;
             }
         }
+
+        public override string ToString()
+        {
+            return $"{Nome} {Matricola} {Esperienze}";
+        }
+
+        public bool Equals(VitaT_Lavoratore l)
+        {
+            if (l == null)
+                return false;
+            if (this == l)
+                return true;
+            if (this.Matricola == l.Matricola || this.Nome == l.Nome || this.Esperienze == l.Esperienze)
+                return true;
+            else
+                return false;
+        }
+
+
+        public bool CompareTo(VitaT_Lavoratore l)
+        {
+            if (this.punteggio() == l.punteggio())
+                return true;
+            else
+                return false;
+        }
+
+
+        public override int GetHashCode()
+        {
+            return (Matricola, Nome).GetHashCode();
+        }
     }
 }

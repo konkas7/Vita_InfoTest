@@ -77,6 +77,40 @@ namespace Vita_InfoTest
                 return false;
         }
 
+        public override string ToString()
+        {
+            return $"{Nome} {Matricola} {Voto} {Lode}";
+        }
+
+        public bool Equals(VitaT_Disoccupato d)
+        {
+            if (d == null)
+                return false;
+            if (this == d)
+                return true;
+            if (this.Matricola == d.Matricola || this.Nome == d.Nome || this.Voto == d.Voto || this.Lode == d.Lode)
+                return true;
+            else
+                return false;
+        }
+
+
+        
+
+
+        public bool CompareTo(VitaT_Disoccupato d)
+        {
+            if (this.punteggio() == d.punteggio())
+                return true;
+            else
+                return false;
+        }
+
+
+        public override int GetHashCode()
+        {
+            return (Matricola, Nome).GetHashCode();
+        }
 
     }
 }

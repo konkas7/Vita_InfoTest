@@ -54,6 +54,29 @@ namespace Vita_InfoTest
         public abstract int punteggio();
 
 
+        public override string ToString()
+        {
+            return $"{Nome} {Matricola}";
+        }
+
+        public bool Equals(VitaT_Candidato c)
+        {
+            if (c == null)
+                return false;
+            if (this == c)
+                return true;
+            if (this.Matricola == c.Matricola || this.Nome == c.Nome)
+                return true;
+            else
+                return false;
+        }
+
+        public abstract bool CompareTo(VitaT_Candidato c);
+
+        public override int GetHashCode()
+        {
+            return (Matricola, Nome).GetHashCode();
+        }
 
 
 
