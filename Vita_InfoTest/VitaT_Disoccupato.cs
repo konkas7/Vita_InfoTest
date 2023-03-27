@@ -30,12 +30,11 @@ namespace Vita_InfoTest
         {
             get { return VitaT_lode; }
             set {
-                if (VitaT_voto == 105)
+                if (VitaT_voto == 110)
                 {
                     try
                     {
                         VitaT_lode = value;
-                        VitaT_voto = VitaT_voto + 5;
                     }
                     catch
                     {
