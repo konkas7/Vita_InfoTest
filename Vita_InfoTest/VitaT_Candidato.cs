@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vita_InfoTest
 {
-    abstract class VitaT_Candidato
+    public abstract class VitaT_Candidato
     {
 
         private int VitaT_matricola;
@@ -52,5 +52,10 @@ namespace Vita_InfoTest
 
 
         public abstract int punteggio();
+
+
+
+
+
     }
 }
