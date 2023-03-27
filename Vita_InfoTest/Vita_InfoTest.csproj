@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VitaT_Candidato.cs" />
     <Compile Include="VitaT_Disoccupato.cs" />
+    <Compile Include="VitaT_Lavoratore.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

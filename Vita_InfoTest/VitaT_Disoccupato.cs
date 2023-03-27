@@ -48,20 +48,20 @@ namespace Vita_InfoTest
 
         public VitaT_Disoccupato()
         {
-            VitaT_voto = 0;
-            VitaT_lode = false;
+            Voto = 0;
+            Lode = false;
         }
 
         public VitaT_Disoccupato(int voto, bool lode, int matricola, string nome) : base(matricola, nome)
         {
-            VitaT_voto = voto;
-            VitaT_lode = lode;
+            Voto = voto;
+            Lode = lode;
         }
 
         public override int punteggio()
         {
-            int a = (VitaT_voto * 100) / 110;
-            if (VitaT_lode == true)
+            int a = (Voto * 100) / 110;
+            if (Lode == true)
                 a += 5;
 
             return a;
@@ -69,12 +69,14 @@ namespace Vita_InfoTest
 
         public override bool isIdoneo()
         {
-            if (VitaT_voto >= 72)
+            if (Voto >= 72)
             {
                 return true;
             }
             else
                 return false;
         }
+
+
     }
 }

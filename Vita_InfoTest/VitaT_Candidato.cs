@@ -26,25 +26,25 @@ namespace Vita_InfoTest
 
         public VitaT_Candidato()
         {
-            VitaT_matricola = 0;
-            VitaT_nome = null;
+            Matricola = 0;
+            Nome = null;
         }
 
         public VitaT_Candidato(int x)
         {
-            VitaT_matricola = x;
-            VitaT_nome = null;
+            Matricola = x;
+            Nome = null;
         }
         public VitaT_Candidato(string s)
         {
-            VitaT_matricola = 0;
-            VitaT_nome = s;
+            Matricola = 0;
+            Nome = s;
         }
 
         public VitaT_Candidato(int x, string s)
         {
-            VitaT_matricola = x;
-            VitaT_nome = s;
+            Matricola = x;
+            Nome = s;
         }
 
 
