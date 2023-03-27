@@ -48,12 +48,9 @@ namespace Vita_InfoTest
         }
 
 
-        public abstract bool isIdoneo()
-        {
-        }
+        public abstract bool isIdoneo();
 
-        public abstract int punteggio()
-        {
-        }
+
+        public abstract int punteggio();
     }
 }
